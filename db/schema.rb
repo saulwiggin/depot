@@ -47,9 +47,11 @@ ActiveRecord::Schema.define(version: 20150812132021) do
     t.string   "title"
     t.text     "description"
     t.string   "image_url"
-    t.decimal  "price",       precision: 8, scale: 2
+    t.decimal  "price",         precision: 8, scale: 2
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "numberinstock"
+    t.text     "category"
   end
 
   create_table "users", force: true do |t|

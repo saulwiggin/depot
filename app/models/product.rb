@@ -24,6 +24,9 @@ class Product < ActiveRecord::Base
   }
   validates :title, length: {minimum: 10}
 
+  validates :numberinstock, presence: true
+
+
   private
 
     # ensure that there are no line items referencing this product
