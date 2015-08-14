@@ -27,6 +27,14 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
+   <div class="field">
+    <%= label(:category, 'Category') %><br>
+    <%= select_tag "category", options_for_select(["Discount", "massive discount", "normal sale"]) %>
+  </div>
+    <div class="field">
+    <%= label(:numberinstock, 'Number in Stock') %><br>
+    <%= text_field(:post, :numberinstock, size: 3) %>
+  </div> 
   <div class="actions">
     <%= f.submit %>
   </div>
