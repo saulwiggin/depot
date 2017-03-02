@@ -40,4 +40,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 gem 'protected_attributes'
 
+gem 'react-rails'
 #gem 'test_helper', '~> 0.0.1'
